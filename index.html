@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
@@ -12,7 +15,7 @@
   <header>
 
     <nav>
-      <p class="title">BrandonObeso</p>
+      <p class="title">adamkeyes</p>
       <ul>
         <li>
           <a href="https://github.com/Brandon-O95"><img src="./assets/images/icon-github.svg" alt="Github logo"></a>
@@ -27,17 +30,14 @@
           <a href="https://twitter.com/dvsBEZEER"><img src="./assets/images/icon-twitter.svg" alt="Twitter logo"></a>
         </li>
       </ul>
+      <img class="hero-img" src="./assets/images/image-profile-mobile.webp" alt="adam keyes profile picture">
     </nav>
 
-      <picture>
-        <source media="(min-width:768px)" srcset="image-profile-tablet.webp">
-        <source media="(min-width:375px)" srcset="image-profile-mobile.webp">
-        <img src="./assets/images/image-profile-desktop.webp" alt="image of brandon obeso">
-      </picture>
+    
 
-      <div>
-        <h1>Nice to meet you! I'm Brandon Obeso.</h1>
-        <p>Based in the US, I'm a front-end developer passionate about building accessible web apps that users love.</p>
+      <div class="header-info">
+        <h1>Nice to meet you! I'm <span>Adam Keyes</span>.</h1>
+        <p class="header-text">Based in the US, I'm a front-end developer passionate about building accessible web apps that users love.</p>
         <button>CONTACT ME</button>
       </div>
 
@@ -47,160 +47,187 @@
   <main>
     <!-- Skills Section -->
     <div class="grid-section-one">
-      <div class="skills">
+      <div class="skills first-header">
         <h2>HTML</h2>
         <p>1 Year Experience</p>
       </div>
 
       <div class="skills">
-        <h2>HTML</h2>
+        <h2>CSS</h2>
         <p>1 Year Experience</p>
       </div>
 
       <div class="skills">
-        <h2>HTML</h2>
+        <h2>Javascript</h2>
         <p>1 Year Experience</p>
       </div>
 
       <div class="skills">
-        <h2>HTML</h2>
+        <h2>Accesibility</h2>
         <p>1 Year Experience</p>
       </div>
 
       <div class="skills">
-        <h2>HTML</h2>
+        <h2>React</h2>
         <p>1 Year Experience</p>
       </div>
 
-      <div class="skills">
-        <h2>HTML</h2>
+      <div class="skills last-header">
+        <h2>Sass</h2>
         <p>1 Year Experience</p>
       </div>
     </div>
 
     <!-- Projects Section -->
     <div class="projects-section-title">
-      <h2>Projects</h2>
-      <button>CONTACT ME</button>
+      <div>
+        <h2 class="projects-header">Projects</h2>
+      </div>
+      <div>
+        <button>CONTACT ME</button>
+      </div>
     </div>
 
     <div class="grid-section-two">
       <div class="grid-item">
         <picture>
-          <source media="(min-width:768px)" srcset="thumbnail-project-1-small">
-          <img src="./assets/images/thumbnail-project-1-large.webp" alt="Image of Design Portfolio project">
+          <source media="(min-width:1024px)" src="./assets/images/thumbnail-project-1-large.webp">
+          <img class="project-img" src="./assets/images/thumbnail-project-1-small.webp" alt="Image of Design Portfolio project">
         </picture>
-        <h3>Desgin Portfolio</h3>
-        <p class="tags">HTML CSS</p>
+        <h3>DESIGN PORTFOLIO</h3>
+        <div class="tags-group">
+          <p class="tags">HTML</p>
+          <p class="tags">CSS</p>
+        </div>
 
         <div class="link-group">
-          <a href="#">VIEW PROJECT</a>
-          <a href="#">VIEW CODE</a>
+          <a class="group-link" href="#">VIEW PROJECT</a>
+          <a class="group-link" href="#">VIEW CODE</a>
         </div>
       </div>
 
       <div class="grid-item">
         <picture>
-          <source media="(min-width:768px)" srcset="thumbnail-project-2-small">
-          <img src="./assets/images/thumbnail-project-2-large.webp" alt="Image of E-learning Landing page project">
+          <source media="(min-width:1024px)" src="./assets/images/thumbnail-project-2-large.webp">
+          <img class="project-img" src="./assets/images/thumbnail-project-2-small.webp" alt="Image of E-learning Landing page project">
         </picture>
         <h3>E-LEARNING LANDING PAGE</h3>
-        <p class="tags">HTML CSS</p>
+        <div class="tags-group">
+          <p class="tags">HTML</p>
+          <p class="tags">CSS</p>
+        </div>
 
         <div class="link-group">
-          <a href="#">VIEW PROJECT</a>
-          <a href="#">VIEW CODE</a>
+          <a class="group-link" href="#">VIEW PROJECT</a>
+          <a class="group-link" href="#">VIEW CODE</a>
         </div>
       </div>
 
       <div class="grid-item">
         <picture>
-          <source media="(min-width:768px)" srcset="thumbnail-project-3-small">
-          <img src="./assets/images/thumbnail-project-3-large.webp" alt="Image of Todo Web App project">
+          <source media="(min-width:1024px)" src="./assets/images/thumbnail-project-3-large.webp">
+          <img class="project-img" src="./assets/images/thumbnail-project-3-small.webp" alt="Image of Todo Web App project">
         </picture>
         <h3>TODO WEB APP</h3>
-        <p class="tags">HTML CSS JAVASCRIPT</p>
+        <div class="tags-group">
+          <p class="tags">HTML</p>
+          <p class="tags">CSS</p>
+        </div>
 
         <div class="link-group">
-          <a href="#">VIEW PROJECT</a>
-          <a href="#">VIEW CODE</a>
+          <a class="group-link" href="#">VIEW PROJECT</a>
+          <a class="group-link" href="#">VIEW CODE</a>
         </div>
       </div>
 
       <div class="grid-item">
         <picture>
-          <source media="(min-width:768px)" srcset="thumbnail-project-4-small">
-          <img src="./assets/images/thumbnail-project-4-large.webp" alt="Image of Entertainment Web App project">
+          <source media="(min-width:1024px)" src="./assets/images/thumbnail-project-4-large.webp">
+          <img class="project-img" src="./assets/images/thumbnail-project-4-small.webp" alt="Image of Entertainment Web App project">
         </picture>
         <h3>ENTERTAINMENT WEB APP</h3>
-        <p class="tags">HTML CSS JAVASCRIPT</p>
+        <div class="tags-group">
+          <p class="tags">HTML</p>
+          <p class="tags">CSS</p>
+          <p class="tags">JAVASCRIPT</p>
+        </div>
 
         <div class="link-group">
-          <a href="#">VIEW PROJECT</a>
-          <a href="#">VIEW CODE</a>
+          <a class="group-link" href="#">VIEW PROJECT</a>
+          <a class="group-link" href="#">VIEW CODE</a>
         </div>
       </div>
 
       <div class="grid-item">
         <picture>
-          <source media="(min-width:768px)" srcset="thumbnail-project-5-small">
-          <img src="./assets/images/thumbnail-project-5-large.webp" alt="Image of Memory Game project">
+          <source media="(min-width:1024px)" src="./assets/images/thumbnail-project-5-large.webp">
+          <img class="project-img" src="./assets/images/thumbnail-project-5-small.webp" alt="Image of Memory Game project">
         </picture>
         <h3>MEMORY GAME</h3>
-        <p class="tags">HTML CSS JAVASCRIPT</p>
+        <div class="tags-group">
+          <p class="tags">HTML</p>
+          <p class="tags">CSS</p>
+          <p class="tags">JAVASCRIPT</p>
+        </div>
 
         <div class="link-group">
-          <a href="#">VIEW PROJECT</a>
-          <a href="#">VIEW CODE</a>
+          <a class="group-link" href="#">VIEW PROJECT</a>
+          <a class="group-link" href="#">VIEW CODE</a>
         </div>
       </div>
 
-      <div class="grid-item">
+      <div class="grid-item last-item">
         <picture>
-          <source media="(min-width:768px)" srcset="thumbnail-project-6-small">
-          <img src="./assets/images/thumbnail-project-6-large.webp" alt="Image of Art Gallery Showcase projectcd">
+          <source media="(min-width:1024px)" src="./assets/images/thumbnail-project-6-large.webp">
+          <img class="project-img" src="./assets/images/thumbnail-project-6-small.webp" alt="Image of Art Gallery Showcase projectcd">
         </picture>
         <h3>ART GALLERY SHOWCASE</h3>
-        <p class="tags">HTML CSS JAVASCRIPT</p>
+        <div class="tags-group">
+          <p class="tags">HTML</p>
+          <p class="tags">CSS</p>
+          <p class="tags">JAVASCRIPT</p>
+        </div>
 
         <div class="link-group">
-          <a href="#">VIEW PROJECT</a>
-          <a href="#">VIEW CODE</a>
+          <a class="group-link" href="#">VIEW PROJECT</a>
+          <a class="group-link" href="#">VIEW CODE</a>
         </div>
       </div>
     </div>
   </main>
 
   <section class="contact-section">
-    <div>
-      <h2>CONTACT</h2>
-      <p>I would love to hear about your project and how I could help. Pleasse fill in the form, and I'll get back to you as soon as possible.</p>
+    <div class="contact">
+      <h2 class="contact-title">Contact</h2>
+      <p class="contact-text">I would love to hear about your project and how I could help. Pleasse fill in the form, and I'll get back to you as soon as possible.</p>
     </div>
 
     <!-- form section -->
     <form action="#">
-      <label for="username">Name</label>
+      <label for="username">NAME</label>
       <input type="text" name="username" id="username">
 
-      <label for="username">email</label>
+      <label for="username">EMAIL</label>
       <input type="text" name="email" id="email">
 
-      <label for="message">Message</label>
-      <textarea name="message" id="message" cols="30" rows="10"></textarea>
-
-      <button type="submit">SEND MESSAGE</button>
+      <label for="message">MESSAGE</label>
+      <textarea name="message" id="message" cols="30" rows="6"></textarea>
     </form>
+
+    <div class="contact-button">
+      <button type="submit">SEND MESSAGE</button>
+    </div>
 
   </section>
 
   <!-- footer section -->
   <footer>
-    <p class="title">BrandonObeso</p>
+    <p class="footer-title">adamkeyes</p>
     <div class="socials">
       <a href="https://github.com/Brandon-O95"><img src="./assets/images/icon-github.svg" alt="Github logo"></a>
       <a href="https://www.frontendmentor.io/profile/Brandon-O95"><img src="./assets/images/icon-frontend-mentor.svg" alt="Frontend mentor logo"></a>   
       <a href="https://www.linkedin.com/in/brandon-obeso-bbbab1236/"><img src="./assets/images/icon-linkedin.svg" alt="Linkedin logo"></a>
-      <a href="https://twitter.com/dvsBEZEER"><img src="/single-page-developer-portfolio/starter-code/assets/images/icon-twitter.svg" alt="Twitter logo"></a>
+      <a href="https://twitter.com/dvsBEZEER"><img src="./assets/images/icon-twitter.svg" alt="Twitter logo"></a>
     </div>
 
   </footer>
