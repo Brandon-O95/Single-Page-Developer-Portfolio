@@ -5,6 +5,7 @@
 }
 
 body, main {
+  background-color: #151515;
   margin: 0;
   padding: 0;
 }
@@ -18,4 +19,16 @@ a {
 
 a:hover {
   color: rgb(78, 225, 160);
+}
+
+button {
+
+}
+
+button:hover {
+  color: rgb(78, 225, 160);
+  color: white;
+  font-size: 24px;
+  transition: color 0.3ms;
+  outline: none;
 }
